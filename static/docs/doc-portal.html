@@ -9,11 +9,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
   <link rel="stylesheet" href="https://unpkg.com/docsify-darklight-theme@3.2.0/dist/style.min.css"
     title="docsify-darklight-theme" type="text/css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lexend:ital,wght@0,300;0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Fira+Code:wght@300;400;700&display=swap">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lexend:ital,wght@0,300;0,400;0,700;1,400&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Fira+Code:wght@300;400;700&display=swap');
     #docsify-darklight-theme {
-      display: none;
+      top: 0;
     }
     .docs-edit-link {
       float: right;
@@ -48,42 +50,38 @@
       },
       darklightTheme: {
         siteFont: "Lexend",
-        defaultTheme: "dark",
         codeFontFamily: "Fira Code, Roboto Mono, Monaco, courier, monospace",
         bodyFontSize: "17px",
         dark: {
-          accent: "#03a9f4",
+          background: "#16161a",
+          accent: "#AB47BC",
+          textColor: "#94a1b2",
+          borderColor: "#2cb67d",
           toogleBackground: "#ffffff",
-          background: "#191919",
-          textColor: "#F4F1F3",
-          codeTextColor: "#ffffff",
           codeBackgroundColor: "#0e2233",
-          borderColor: "#0d2538",
           blockQuoteColor: "#858585",
           highlightColor: "#d22778",
           sidebarSublink: "#b4b4b4",
           codeTypeColor: "#ffffff",
+          codeTextColor: "#ffffff",
           coverBackground:
             "linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)"
-        }
-        // TODO
-        // light: {
-        //   accent: "#42b983",
-        //   toogleBackground: "#091a28",
-        //   background: "#ffffff",
-        //   textColor: "blue",
-        //   codeTextColor: "#525252",
-        //   codeBackgroundColor: "#f8f8f8",
-        //   borderColor: "rgba(0, 0, 0, 0.07)",
-        //   blockQuoteColor: "#858585",
-        //   highlightColor: "#d22778",
-        //   sidebarSublink: "#b4b4b4",
-        //   codeTypeColor: "#091a28",
-        //   coverBackground:
-        //     "linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)",
-        //   toogleImage:
-        //     "url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)",
-        // },
+        },
+        light: {
+          background: "#fffffe",
+          accent: "#3da9fc",
+          textColor: "#5f6c7b",
+          borderColor: "#ef4565",
+          sidebarSublink: "#282828",
+          toogleBackground: "#ffffff",
+          codeBackgroundColor: "#0e2233",
+          blockQuoteColor: "#858585",
+          highlightColor: "#d22778",
+          codeTypeColor: "#ffffff",
+          codeTextColor: "#ffffff",
+          coverBackground:
+            "linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)"
+        },
       },
       plugins: [
         function (hook, vm) {
@@ -113,4 +111,5 @@
   <script defer src="https://unpkg.com/prismjs@1.25.0/components/prism-c.min.js"></script>
   <script defer src="https://unpkg.com/prismjs@1.25.0/components/prism-cpp.min.js"></script>
 </body>
+
 </html>

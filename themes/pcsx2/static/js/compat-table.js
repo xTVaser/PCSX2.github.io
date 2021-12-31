@@ -45,8 +45,8 @@ const searchOptions = {
 // Filter Button Handlers
 // TODO - clean this up with jquery
 function updateClassList(domElement, filterOn) {
-  domElement.classList.remove(filterOn ? "compat-filter-off" : "compat-filter-on");
-  domElement.classList.add(filterOn ? "compat-filter-on" : "compat-filter-off");
+  domElement.classList.remove(filterOn ? "off" : "on");
+  domElement.classList.add(filterOn ? "on" : "off");
   filterData();
 }
 
@@ -174,7 +174,7 @@ function getEmojiFlag(region) {
 }
 
 // HTML Templates
-let rowTemplate = doT.template(`<tr><td class="game-title"><i class="fas fa-circle compat-status-{{=it.status}}"></i>&nbsp;{{=it.title}}</td><td>{{=it.flag}}&nbsp;{{=it.serial}}</td><td>{{=it.crc}}</td><td>{{=it.testedVersion}}</td><td>{{=it.lastUpdated}}</td></tr>`);
+let rowTemplate = doT.template(`<tr><td class="game-title"><i class="fas fa-circle compat-status {{=it.status}}"></i>&nbsp;{{=it.title}}</td><td>{{=it.flag}}&nbsp;{{=it.serial}}</td><td>{{=it.crc}}</td><td>{{=it.testedVersion}}</td><td>{{=it.lastUpdated}}</td></tr>`);
 let pageButtonTemplate = doT.template('<div class="col-md-auto"><button type="button" class="btn btn-pagination" value="{{=it.val}}" {{? it.disabled }}disabled{{?}}>{{=it.val}}</button></div>')
 
 // Initialize the Compatibility Table, given an array of compatibility objects.
