@@ -1,7 +1,7 @@
 module:
   hugoVersion:
     extended: true
-baseURL: 'https://pcsx2.net/'
+# baseURL: 'https://pcsx2.net/'
 publishDir: 'docs/'
 permalinks:
   posts: /:year/:month/:title/
